@@ -1,0 +1,18 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
+})
+export class LoginComponent implements OnInit {
+
+  errorMsg: string | undefined;
+  loginInProcess: boolean = false;
+  
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
