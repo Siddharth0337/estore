@@ -1,6 +1,8 @@
 pipeline {
     agent any
 
+    tools {nodejs "NodeJS"}
+  
     stages {
         stage('Source') {
             steps {
@@ -17,7 +19,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Run ng test command
-                sh "ng test --browsers ChromeHeadless --watch=false"
+                //sh "ng test --browsers ChromeHeadless --watch=false"
                 echo 'Test Stage Finished'
             }
         }
